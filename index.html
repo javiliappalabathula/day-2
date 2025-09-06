@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Test Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Blood Test Portal</h1>
+    </header>
+
+    <main>
+        <!-- Blood Test Request Form Section -->
+        <section class="form-container">
+            <h2>Blood Test Request Form</h2>
+            <form action="#" method="post" id="request-form">
+                <div class="form-group">
+                    <label for="patient-name">Patient Name:</label>
+                    <input type="text" id="patient-name" name="patient-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="patient-dob">Date of Birth:</label>
+                    <input type="date" id="patient-dob" name="patient-dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="blood-group">Blood Group:</label>
+                    <select id="blood-group" name="blood-group">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="test-type">Test Type:</label>
+                    <input type="text" id="test-type" name="test-type" required>
+                </div>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <!-- Blood Test Report Table Section -->
+        <section class="report-container">
+            <h2>Blood Test Report</h2>
+            <div class="patient-info">
+                <h3>Patient Information</h3>
+                <p><strong>Name:</strong> Jane Doe</p>
+                <p><strong>Age:</strong> 35</p>
+                <p><strong>Gender:</strong> Female</p>
+                <p><strong>Report Date:</strong> 06 Sep 2025</p>
+            </div>
+
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Result</th>
+                        <th>Reference Range</th>
+                        <th>Units</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hemoglobin</td>
+                        <td>13.5</td>
+                        <td>12.0 - 15.5</td>
+                        <td>g/dL</td>
+                        <td><span class="normal">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <td>WBC Count</td>
+                        <td>12.1</td>
+                        <td>4.0 - 10.0</td>
+                        <td>x10^3/uL</td>
+                        <td><span class="high">High</span></td>
+                    </tr>
+                    <tr>
+                        <td>Platelet Count</td>
+                        <td>250</td>
+                        <td>150 - 450</td>
+                        <td>x10^3/uL</td>
+                        <td><span class="normal">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <td>Glucose (Fasting)</td>
+                        <td>105</td>
+                        <td>70 - 99</td>
+                        <td>mg/dL</td>
+                        <td><span class="high">High</span></td>
+                    </tr>
+                </body>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lab Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
